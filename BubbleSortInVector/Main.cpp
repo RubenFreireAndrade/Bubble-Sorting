@@ -1,7 +1,7 @@
 #include <vector>
 #include <iostream>
 
-std::vector<int> vecNumber;
+std::vector<int> vecContainer;
 
 void PrintVecArray();
 void BubbleSort(int numbers);
@@ -23,16 +23,16 @@ int main()
 
 void BubbleSort(int numbers)
 {
-	vecNumber.push_back(numbers);
-	for (int i = 0; i < vecNumber.size() - 1; i++)
+	vecContainer.push_back(numbers);
+	for (int i = 0; i < vecContainer.size() - 1; i++)
 	{
-		for (int j = 0; j < (vecNumber.size() - 1 - i); j++)
+		for (int j = 0; j < (vecContainer.size() - 1 - i); j++)
 		{
-			if (vecNumber[j] > vecNumber[j + 1])
+			if (vecContainer[j] > vecContainer[j + 1])
 			{
-				int temp = vecNumber[j];
-				vecNumber[j] = vecNumber[j + 1];
-				vecNumber[j + 1] = temp;
+				int temp = vecContainer[j];
+				vecContainer[j] = vecContainer[j + 1];
+				vecContainer[j + 1] = temp;
 			}
 		}
 	}
@@ -42,17 +42,17 @@ void BubbleSortWithOptimisation(int numbers)
 {
 	int i = 0;
 	bool isSwapped = false;
-	vecNumber.push_back(numbers);
+	vecContainer.push_back(numbers);
 	do
 	{
 		isSwapped = false;
-		for (int j = 0; j < (vecNumber.size() - 1 - i); j++)
+		for (int j = 0; j < (vecContainer.size() - 1 - i); j++)
 		{
-			if (vecNumber[j] > vecNumber[j + 1])
+			if (vecContainer[j] > vecContainer[j + 1])
 			{
-				int temp = vecNumber[j];
-				vecNumber[j] = vecNumber[j + 1];
-				vecNumber[j + 1] = temp;
+				int temp = vecContainer[j];
+				vecContainer[j] = vecContainer[j + 1];
+				vecContainer[j + 1] = temp;
 				isSwapped = true;
 			}
 		}
@@ -64,8 +64,8 @@ void PrintVecArray()
 {
 	std::cout << "Numbers are sorted" << std::endl;
 	std::cout << "================================================" << std::endl;
-	for (int i = 0; i < vecNumber.size(); i++)
+	for (int i = 0; i < vecContainer.size(); i++)
 	{
-		std::cout << vecNumber[i] << std::endl;
+		std::cout << vecContainer[i] << std::endl;
 	}
 }

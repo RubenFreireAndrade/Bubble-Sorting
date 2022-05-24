@@ -1,6 +1,1 @@
-﻿  Main.cpp
-C:\Users\reube\Desktop\Bubble Sort\BubbleSortInVector\Main.cpp(27,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\reube\Desktop\Bubble Sort\BubbleSortInVector\Main.cpp(29,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\reube\Desktop\Bubble Sort\BubbleSortInVector\Main.cpp(49,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\reube\Desktop\Bubble Sort\BubbleSortInVector\Main.cpp(67,20): warning C4018: '<': signed/unsigned mismatch
-  BubbleSortInVector.vcxproj -> C:\Users\reube\Desktop\Bubble Sort\BubbleSortInVector\Debug\BubbleSortInVector.exe
+﻿
